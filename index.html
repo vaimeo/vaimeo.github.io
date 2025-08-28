@@ -8,8 +8,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- Tailwind CSS CDN for styling -->
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
+        /* This CSS is for the futuristic visual effects */
         body {
             font-family: 'Noto Sans', sans-serif;
             background: #0D1117; /* Dark background similar to a terminal */
@@ -97,22 +99,27 @@
         <!-- Header Section -->
         <header class="text-center mb-8">
             <div class="w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden border-4 border-gray-700 shadow-lg">
-                <img src="https://placehold.co/128x128/333333/FFFFFF?text=Wajid" alt="Profile Picture" class="w-full h-full object-cover">
+                <img src="https://vaimeo.github.io/profile.png" alt="Profile Picture" class="w-full h-full object-cover">
             </div>
-            <h1 class="text-4xl sm:text-5xl font-extrabold text-blue-300 mb-2" data-text="Wajid Abid Khan">Wajid Abid Khan</h1>
-            <p class="text-lg text-gray-400 font-medium">Software In-charge at Fodel FZE <span class="text-green-400 block sm:inline-block">| Currently in Dubai, UAE</span></p>
-            <p class="text-sm text-gray-500 mt-2">"Experienced full-stack web developer specializing in PHP, JavaScript (Node.js, AJAX, jQuery, JSON, REST)."</p>
+            <h1 class="text-4xl sm:text-5xl font-extrabold text-blue-300 mb-2" data-text="Wajid Abid Khan">Wajid Abid</h1>
+            <p class="text-lg text-yellow-400 font-medium">Startup Igniter | Builder of High-Impact Ventures | Hotel & Courier Industry Innovator<p><p class="text-lg text-gray-400 font-medium"> Full-Stack Developer | DevOps & Automation | AI Prompt Engineer | Mobile App Developer <span class="text-green-400 block sm:inline-block">| Dubai, UAE</span></p>
+            <p class="text-sm text-white-500 mt-2">
+               I am a Startup Igniter who transforms ideas into scalable ventures. At Fodel, I played a pivotal role from day one — building core solutions, pioneering the region’s first PUDO (Pick-Up & Drop-Off) service, and helping the company grow into a success story that led to a government acquisition. With deep expertise in both software development and the startup ecosystem, I thrive at the intersection of technology, innovation, and business growth.
+            </p>
         </header>
 
         <!-- Tab Navigation -->
         <nav class="flex justify-center flex-wrap space-x-4 mb-8">
-            <button class="tab-button px-4 py-2 text-gray-400 font-medium transition-colors duration-300 hover:text-white" data-tab="about">About</button>
+            <button class="tab-button active px-4 py-2 text-gray-400 font-medium transition-colors duration-300 hover:text-white" data-tab="about">About</button>
             <button class="tab-button px-4 py-2 text-gray-400 font-medium transition-colors duration-300 hover:text-white" data-tab="skills">Skills</button>
             <button class="tab-button px-4 py-2 text-gray-400 font-medium transition-colors duration-300 hover:text-white" data-tab="experience">Experience</button>
-            <button class="tab-button px-4 py-2 text-gray-400 font-medium transition-colors duration-300 hover:text-white" data-tab="achievements">Achievements</button>
             <button class="tab-button px-4 py-2 text-gray-400 font-medium transition-colors duration-300 hover:text-white" data-tab="projects">Projects</button>
+            <button class="tab-button px-4 py-2 text-gray-400 font-medium transition-colors duration-300 hover:text-white" data-tab="education">Education</button>
+            <!-- New Portfolio Tab -->
+            <button class="tab-button px-4 py-2 text-gray-400 font-medium transition-colors duration-300 hover:text-white" data-tab="portfolio">Portfolio</button>
             <button class="tab-button px-4 py-2 text-gray-400 font-medium transition-colors duration-300 hover:text-white" data-tab="contact">Contact</button>
-            <button class="tab-button px-4 py-2 text-gray-400 font-medium transition-colors duration-300 hover:text-white" data-tab="gemini">AI Assistant</button>
+            <!--<button class="tab-button px-4 py-2 text-gray-400 font-medium transition-colors duration-300 hover:text-white" data-tab="gemini">AI Assistant</button>-->
+
         </nav>
 
         <!-- Content Sections -->
@@ -121,22 +128,87 @@
             <section id="about" class="tab-section bg-gray-800 rounded-xl p-8 shadow-2xl glowing-border mb-12">
                 <h2 class="text-2xl font-bold text-purple-300 mb-4 glitch-text" data-text="About Me">About Me</h2>
                 <p class="text-gray-300 leading-relaxed">
-                    With over a decade of experience developing dynamic web applications, I have honed my skills in both browser and server-side scripting. My expertise lies in architecting and implementing robust systems using PHP, JavaScript frameworks like Node.js and jQuery, and integrating with RESTful APIs. I am passionate about solving complex technical challenges and contributing to a thriving developer community, as demonstrated by my active participation on Stack Overflow.
+                   For over a decade, I've been a web application developer focused on one thing: creating effective solutions for people and businesses. I see programming languages not as a defining identity, but as powerful tools to solve complex challenges.
+
+My expertise is in architecting and implementing robust systems that are tailored to the specific needs of a project. I'm driven by the desire to build impactful solutions and contribute to the developer community, as demonstrated by my active participation on Stack Overflow.
+
+
                 </p>
             </section>
 
             <!-- Skills & Expertise Section -->
             <section id="skills" class="tab-section hidden bg-gray-800 rounded-xl p-8 shadow-2xl glowing-border mb-12">
                 <h2 class="text-2xl font-bold text-purple-300 mb-6 glitch-text" data-text="Skills & Expertise">Skills & Expertise</h2>
-                <div class="flex flex-wrap gap-4">
-                    <span class="bg-blue-600 text-white text-sm font-semibold px-4 py-2 rounded-full shadow-lg">PHP</span>
-                    <span class="bg-blue-600 text-white text-sm font-semibold px-4 py-2 rounded-full shadow-lg">JavaScript</span>
-                    <span class="bg-blue-600 text-white text-sm font-semibold px-4 py-2 rounded-full shadow-lg">AJAX</span>
-                    <span class="bg-blue-600 text-white text-sm font-semibold px-4 py-2 rounded-full shadow-lg">jQuery</span>
-                    <span class="bg-blue-600 text-white text-sm font-semibold px-4 py-2 rounded-full shadow-lg">JSON</span>
-                    <span class="bg-blue-600 text-white text-sm font-semibold px-4 py-2 rounded-full shadow-lg">Node.js</span>
-                    <span class="bg-blue-600 text-white text-sm font-semibold px-4 py-2 rounded-full shadow-lg">REST</span>
-                    <span class="bg-blue-600 text-white text-sm font-semibold px-4 py-2 rounded-full shadow-lg">cURL</span>
+                <div class="space-y-6">
+                    <div>
+                        <h3 class="text-xl font-semibold text-blue-300 mb-2">Frontend</h3>
+                        <div class="flex flex-wrap gap-4">
+                            <span class="bg-blue-600 text-white text-sm font-semibold px-4 py-2 rounded-full shadow-lg">React Js</span>
+                            <span class="bg-blue-600 text-white text-sm font-semibold px-4 py-2 rounded-full shadow-lg">Next.js</span>
+                            <span class="bg-blue-600 text-white text-sm font-semibold px-4 py-2 rounded-full shadow-lg">Angular</span>
+                            <span class="bg-blue-600 text-white text-sm font-semibold px-4 py-2 rounded-full shadow-lg">Ionic</span>
+                            <span class="bg-blue-600 text-white text-sm font-semibold px-4 py-2 rounded-full shadow-lg">AJAX</span>
+                            <span class="bg-blue-600 text-white text-sm font-semibold px-4 py-2 rounded-full shadow-lg">JavaScript Frameworks</span>
+                            <span class="bg-blue-600 text-white text-sm font-semibold px-4 py-2 rounded-full shadow-lg">jQuery</span>
+                            <span class="bg-blue-600 text-white text-sm font-semibold px-4 py-2 rounded-full shadow-lg">HTML/HTML5</span>
+                            <span class="bg-blue-600 text-white text-sm font-semibold px-4 py-2 rounded-full shadow-lg">CSS/CSS Frameworks</span>
+                            <span class="bg-blue-600 text-white text-sm font-semibold px-4 py-2 rounded-full shadow-lg">Webpack</span>
+                            <span class="bg-blue-600 text-white text-sm font-semibold px-4 py-2 rounded-full shadow-lg">Bootstrap</span>
+                            <span class="bg-blue-600 text-white text-sm font-semibold px-4 py-2 rounded-full shadow-lg">Foundation</span>
+                            <span class="bg-blue-600 text-white text-sm font-semibold px-4 py-2 rounded-full shadow-lg">Adobe Xd</span>
+                            <span class="bg-blue-600 text-white text-sm font-semibold px-4 py-2 rounded-full shadow-lg">Adobe Photoshop</span>
+                            <span class="bg-blue-600 text-white text-sm font-semibold px-4 py-2 rounded-full shadow-lg">Adobe Illustrator</span>
+                            <span class="bg-blue-600 text-white text-sm font-semibold px-4 py-2 rounded-full shadow-lg">k8s</span>
+                            <span class="bg-blue-600 text-white text-sm font-semibold px-4 py-2 rounded-full shadow-lg">Grafana</span>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-semibold text-blue-300 mb-2">Backend</h3>
+                        <div class="flex flex-wrap gap-4">
+                            <span class="bg-purple-600 text-white text-sm font-semibold px-4 py-2 rounded-full shadow-lg">Python</span>
+                            <span class="bg-purple-600 text-white text-sm font-semibold px-4 py-2 rounded-full shadow-lg">Node.js</span>
+                            <span class="bg-purple-600 text-white text-sm font-semibold px-4 py-2 rounded-full shadow-lg">PHP</span>
+                            <span class="bg-purple-600 text-white text-sm font-semibold px-4 py-2 rounded-full shadow-lg">SOAP</span>
+                            <span class="bg-purple-600 text-white text-sm font-semibold px-4 py-2 rounded-full shadow-lg">MVC</span>
+                            <span class="bg-purple-600 text-white text-sm font-semibold px-4 py-2 rounded-full shadow-lg">Ecommerce</span>
+                            <span class="bg-purple-600 text-white text-sm font-semibold px-4 py-2 rounded-full shadow-lg">API Development</span>
+                            <span class="bg-purple-600 text-white text-sm font-semibold px-4 py-2 rounded-full shadow-lg">Web-server management</span>
+                            <span class="bg-purple-600 text-white text-sm font-semibold px-4 py-2 rounded-full shadow-lg">Database Schema Designing</span>
+                            <span class="bg-purple-600 text-white text-sm font-semibold px-4 py-2 rounded-full shadow-lg">Cross Browsing</span>
+                            <span class="bg-purple-600 text-white text-sm font-semibold px-4 py-2 rounded-full shadow-lg">Joomla</span>
+                            <span class="bg-purple-600 text-white text-sm font-semibold px-4 py-2 rounded-full shadow-lg">Opencart</span>
+                            <span class="bg-purple-600 text-white text-sm font-semibold px-4 py-2 rounded-full shadow-lg">Magento</span>
+                            <span class="bg-purple-600 text-white text-sm font-semibold px-4 py-2 rounded-full shadow-lg">Wordpress</span>
+                            <span class="bg-purple-600 text-white text-sm font-semibold px-4 py-2 rounded-full shadow-lg">Custom PHP Applications</span>
+                            <span class="bg-purple-600 text-white text-sm font-semibold px-4 py-2 rounded-full shadow-lg">Procedural Programming</span>
+                            <span class="bg-purple-600 text-white text-sm font-semibold px-4 py-2 rounded-full shadow-lg">OOP</span>
+                            <span class="bg-purple-600 text-white text-sm font-semibold px-4 py-2 rounded-full shadow-lg">Yii</span>
+                            <span class="bg-purple-600 text-white text-sm font-semibold px-4 py-2 rounded-full shadow-lg">CakePHP</span>
+                            <span class="bg-purple-600 text-white text-sm font-semibold px-4 py-2 rounded-full shadow-lg">Swagger</span>
+                            <span class="bg-purple-600 text-white text-sm font-semibold px-4 py-2 rounded-full shadow-lg">Java Spring</span>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-semibold text-blue-300 mb-2">DevOps</h3>
+                        <div class="flex flex-wrap gap-4">
+                            <span class="bg-green-600 text-white text-sm font-semibold px-4 py-2 rounded-full shadow-lg">Docker</span>
+                            <span class="bg-green-600 text-white text-sm font-semibold px-4 py-2 rounded-full shadow-lg">GitLab</span>
+                            <span class="bg-green-600 text-white text-sm font-semibold px-4 py-2 rounded-full shadow-lg">CI/CD</span>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-semibold text-blue-300 mb-2">Other Skills</h3>
+                        <div class="flex flex-wrap gap-4">
+                            <span class="bg-yellow-600 text-white text-sm font-semibold px-4 py-2 rounded-full shadow-lg">Web Server Setup</span>
+                            <span class="bg-yellow-600 text-white text-sm font-semibold px-4 py-2 rounded-full shadow-lg">Container Orchestration</span>
+                            <span class="bg-yellow-600 text-white text-sm font-semibold px-4 py-2 rounded-full shadow-lg">Project Management</span>
+                            <span class="bg-yellow-600 text-white text-sm font-semibold px-4 py-2 rounded-full shadow-lg">Team Lead</span>
+                            <span class="bg-yellow-600 text-white text-sm font-semibold px-4 py-2 rounded-full shadow-lg">Version Controlling System Management</span>
+                            <span class="bg-yellow-600 text-white text-sm font-semibold px-4 py-2 rounded-full shadow-lg">Task Management</span>
+                            <span class="bg-yellow-600 text-white text-sm font-semibold px-4 py-2 rounded-full shadow-lg">Code Audit</span>
+                            <span class="bg-yellow-600 text-white text-sm font-semibold px-4 py-2 rounded-full shadow-lg">Hybrid Application Development/Deployment</span>
+                        </div>
+                    </div>
                 </div>
             </section>
 
@@ -144,67 +216,222 @@
             <section id="experience" class="tab-section hidden bg-gray-800 rounded-xl p-8 shadow-2xl glowing-border mb-12">
                 <h2 class="text-2xl font-bold text-purple-300 mb-6 glitch-text" data-text="Experience">Experience</h2>
                 <div class="space-y-6">
-                    <!-- Job 1 -->
+                    <!-- Fodel FZE -->
                     <div>
-                        <h3 class="text-xl font-semibold text-blue-300">Software In-charge</h3>
-                        <p class="text-gray-400 font-medium">Fodel FZE · 2018 – Present</p>
+                        <h3 class="text-xl font-semibold text-blue-300">Full-stack Developer</h3>
+                        <p class="text-gray-400 font-medium">Fodel FZE (Acquired by 7x), DUBAI, UAE · Jan 2017 – Present</p>
                         <ul class="list-disc list-inside text-gray-300 mt-2 space-y-1">
-                            <li>Managed and led a team of developers in designing and deploying scalable web applications.</li>
-                            <li>Oversaw the full software development lifecycle, from concept to deployment and maintenance.</li>
-                            <li>Implemented robust RESTful APIs to facilitate seamless data exchange between systems.</li>
+                            <li>Led the successful integration of front-end projects with logistics, e-commerce, and merchant platforms to ensure seamless functionality and optimal customer experience.</li>
+                            <li>Utilised multiple technology stacks including React, Angular, WooCommerce, Magento, and Shopify to maintain and enhance backoffice, customer support, merchant, and e-commerce portals.</li>
+                            <li>Supported day-to-day tech operations, promptly resolving issues reported by the ops team and ensuring smooth functionality across various portals.</li>
+                            <li>Conducted meetings with partners to discuss API use cases, prepared API requirements for the backend team, and conducted thorough testing using tools like Postman for integrations.</li>
+                            <li>Created detailed documentation for sharing with partners, facilitating efficient collaboration and integration processes.</li>
+                            <li>Developed a utility app using the Ionic framework, providing support to operations teams in KSA and UAE and streamlining their regular tasks.</li>
+                            <li>Took charge of designing UX for new features in mobile applications used by merchants and courier partners using Figma and collaborated with the mobile development team to implement these features effectively.</li>
                         </ul>
                     </div>
-                    <!-- Job 2 Placeholder -->
+                    <!-- Kingsouq.com -->
                     <div>
-                        <h3 class="text-xl font-semibold text-blue-300">Senior Web Developer</h3>
-                        <p class="text-gray-400 font-medium">Previous Company · 2015 – 2018</p>
+                        <h3 class="text-xl font-semibold text-blue-300">Full-stack Developer</h3>
+                        <p class="text-gray-400 font-medium">Kingsouq.com, DUBAI, UAE · Sept 2015 – Dec 2016</p>
                         <ul class="list-disc list-inside text-gray-300 mt-2 space-y-1">
-                            <li>Developed and maintained client-side applications using JavaScript, jQuery, and AJAX.</li>
-                            <li>Contributed to a high-traffic e-commerce platform by optimizing server-side PHP scripts.</li>
+                            <li>Led the development and maintenance of OMIGO ERP, a powerful one-stop solution for handling omni channel Order Management Systems (OMS).</li>
+                            <li>Created a seamless platform to manage orders, inventory, payrolls, customer support, and issue management, streamlining operations.</li>
+                            <li>Created the plugins and REST API for Shopify, Facebook, WhatsApp and Magento.</li>
+                        </ul>
+                    </div>
+                    <!-- Lamar Holidays -->
+                    <div>
+                        <h3 class="text-xl font-semibold text-blue-300">Full-stack Developer</h3>
+                        <p class="text-gray-400 font-medium">Lamar Holidays, DUBAI, UAE · June 2013 – Aug 2015</p>
+                        <ul class="list-disc list-inside text-gray-300 mt-2 space-y-1">
+                            <li>Developed Lamar Holidays backend solution, boosting sales and providing comprehensive business monitoring capabilities.</li>
+                            <li>Provided software development support across various departments.</li>
+                        </ul>
+                    </div>
+                    <!-- Softech Microsystems -->
+                    <div>
+                        <h3 class="text-xl font-semibold text-blue-300">Full-stack Developer</h3>
+                        <p class="text-gray-400 font-medium">Softech Microsystems, KARACHI, PAKISTAN · Jul 2012 – May 2013</p>
+                        <ul class="list-disc list-inside text-gray-300 mt-2 space-y-1">
+                            <li>Voice Logging System Specialist for the Telecom Industry.</li>
+                            <li>Developed VLS system including new features and add-ons.</li>
+                            <li>Migrated existing software to the cloud and created various SaaS applications for existing customers.</li>
+                        </ul>
+                    </div>
+                    <!-- Aiminsight -->
+                    <div>
+                        <h3 class="text-xl font-semibold text-blue-300">Web Application Development Engineer</h3>
+                        <p class="text-gray-400 font-medium">Aiminsight, LOS ANGELES, USA (Remote) · Dec 2012 – Apr 2013</p>
+                        <ul class="list-disc list-inside text-gray-300 mt-2 space-y-1">
+                            <li>Customised web modules for an ERP system extensively.</li>
+                            <li>Maintained and enhanced both existing and new software, with a particular focus on the healthcare domain.</li>
+                        </ul>
+                    </div>
+                    <!-- Software House Pakistan -->
+                    <div>
+                        <h3 class="text-xl font-semibold text-blue-300">Web Application Developer</h3>
+                        <p class="text-gray-400 font-medium">Software House Pakistan, KARACHI, PAKISTAN · Dec 2010 – Nov 2012</p>
+                        <ul class="list-disc list-inside text-gray-300 mt-2 space-y-1">
+                            <li>Led and mentored teams working on small web projects.</li>
+                            <li>Ensured projects were completed within deadlines.</li>
+                        </ul>
+                    </div>
+                    <!-- Supersoft technologies -->
+                    <div>
+                        <h3 class="text-xl font-semibold text-blue-300">Junior Web Application Developer</h3>
+                        <p class="text-gray-400 font-medium">Supersoft technologies, KARACHI, PAKISTAN · Jan 2009 – Nov 2010</p>
+                        <ul class="list-disc list-inside text-gray-300 mt-2 space-y-1">
+                            <li>Involved in the development of multiple ecommerce sites and classified websites.</li>
                         </ul>
                     </div>
                 </div>
             </section>
             
-            <!-- Achievements & Certifications Section -->
-            <section id="achievements" class="tab-section hidden bg-gray-800 rounded-xl p-8 shadow-2xl glowing-border mb-12">
-                <h2 class="text-2xl font-bold text-purple-300 mb-6 glitch-text" data-text="Achievements">Achievements & Certifications</h2>
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                    <!-- Stack Overflow Badge -->
-                    <div class="flex items-center space-x-4 bg-gray-900 rounded-xl p-4 shadow-inner border border-gray-700">
-                        <img src="https://placehold.co/32x32/ff7b00/ffffff?text=SO" alt="Stack Overflow Icon" class="w-8 h-8 rounded-full">
-                        <div>
-                            <p class="text-sm font-semibold">Stack Overflow Contributor</p>
-                            <a href="https://stackoverflow.com/users/1294231/vaimeo" target="_blank" class="text-xs text-gray-400 hover:underline">1294231 - vaimeo</a>
-                        </div>
-                    </div>
-                    <!-- GitHub Badge -->
-                    <div class="flex items-center space-x-4 bg-gray-900 rounded-xl p-4 shadow-inner border border-gray-700">
-                        <img src="https://placehold.co/32x32/1a202c/ffffff?text=GH" alt="GitHub Icon" class="w-8 h-8 rounded-full">
-                        <div>
-                            <p class="text-sm font-semibold">GitHub Profile</p>
-                            <a href="https://github.com/Wajid-Abid-Khan" target="_blank" class="text-xs text-gray-400 hover:underline">Wajid-Abid-Khan</a>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
             <!-- Projects Section -->
             <section id="projects" class="tab-section hidden bg-gray-800 rounded-xl p-8 shadow-2xl glowing-border mb-12">
                 <h2 class="text-2xl font-bold text-purple-300 mb-6 glitch-text" data-text="Projects">Projects</h2>
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <!-- Project 1 -->
+                    <!-- Project: Docpros - Online Notary Services -->
                     <div class="bg-gray-900 rounded-xl p-6 shadow-inner border border-gray-700">
-                        <h3 class="text-xl font-semibold text-blue-300 mb-2">E-commerce Platform Backend</h3>
-                        <p class="text-gray-400 text-sm mb-4">A high-performance backend system built on Node.js and PHP.</p>
-                        <a href="#" class="text-purple-400 hover:underline">View Project</a>
+                        <h3 class="text-xl font-semibold text-blue-300 mb-2">Docpros - Online Notary Services</h3>
+                        <p class="text-gray-400 text-sm mb-2">Apr 2014 - Present</p>
+                        <a href="#" class="text-purple-400 hover:underline">Show Project</a>
                     </div>
-                    <!-- Project 2 -->
+                    <!-- Project: Online - Hotel & Tourism System -->
                     <div class="bg-gray-900 rounded-xl p-6 shadow-inner border border-gray-700">
-                        <h3 class="text-xl font-semibold text-blue-300 mb-2">Real-time Chat Application</h3>
-                        <p class="text-gray-400 text-sm mb-4">A web-based chat app with real-time updates using WebSockets.</p>
-                        <a href="#" class="text-purple-400 hover:underline">View Project</a>
+                        <h3 class="text-xl font-semibold text-blue-300 mb-2">Online - Hotel & Tourism System</h3>
+                        <p class="text-gray-400 text-sm mb-2">Sep 2013 - Present</p>
+                        <p class="text-gray-400 text-sm mb-4">A complete software for hotels and tour agencies with HR, finance, reporting, logs and XML API integration.</p>
+                        <a href="#" class="text-purple-400 hover:underline">Show Project</a>
                     </div>
+                    <!-- Project: Autism Clinic Software -->
+                    <div class="bg-gray-900 rounded-xl p-6 shadow-inner border border-gray-700">
+                        <h3 class="text-xl font-semibold text-blue-300 mb-2">Autism Clinic Software</h3>
+                        <p class="text-gray-400 text-sm mb-2">Aug 2013 - Present</p>
+                        <p class="text-gray-400 text-sm mb-2">A software solution for clinics working with special patients, offering a complete package from authorizations management to payroll and scheduling.</p>
+                        <ul class="list-disc list-inside text-gray-300 mt-2 space-y-1 text-sm">
+                            <li>Consultant/Doctors Module</li>
+                            <li>Patient Module</li>
+                            <li>Medical/Examination History</li>
+                            <li>Appointments & Scheduling</li>
+                            <li>UCI Module (Manage intake leads)</li>
+                            <li>Regional Centers Module</li>
+                            <li>HR & Payroll</li>
+                            <li>Overtime & Billing</li>
+                            <li>Accounts (Integrated with SAGE Accpac ERP)</li>
+                            <li>Logs & Data Management</li>
+                            <li>Admin & Audit Module</li>
+                            <li>User Authorization</li>
+                        </ul>
+                        <a href="#" class="text-purple-400 hover:underline mt-4 inline-block">Show Project</a>
+                    </div>
+                    <!-- Project: Choice Sales -->
+                    <div class="bg-gray-900 rounded-xl p-6 shadow-inner border border-gray-700">
+                        <h3 class="text-xl font-semibold text-blue-300 mb-2">Choice Sales</h3>
+                        <p class="text-gray-400 text-sm mb-2">Mar 2013 - Present</p>
+                        <p class="text-gray-400 text-sm mb-2">An effective and efficient online supply chain system for managing store sales operations, integrated with SAGE ACCPAC ERP.</p>
+                        <ul class="list-disc list-inside text-gray-300 mt-2 space-y-1 text-sm">
+                            <li>Products & Brands</li>
+                            <li>Promotions</li>
+                            <li>Stores & Chains Management</li>
+                            <li>Distributors & Vendors Management</li>
+                            <li>Sales Force Management</li>
+                            <li>Warehouse & Inventory Management</li>
+                            <li>Appointments & Scheduling</li>
+                            <li>Logs & Data Management</li>
+                            <li>Accounts (Integrated with SAGE Accpac ERP)</li>
+                            <li>Admin Module</li>
+                            <li>Alerts & Notifications</li>
+                            <li>User Authorization</li>
+                        </ul>
+                        <a href="#" class="text-purple-400 hover:underline mt-4 inline-block">Show Project</a>
+                    </div>
+                    <!-- Project: Focus Academy -->
+                    <div class="bg-gray-900 rounded-xl p-6 shadow-inner border border-gray-700">
+                        <h3 class="text-xl font-semibold text-blue-300 mb-2">فوكس أكاديمي Focus Academy</h3>
+                        <p class="text-gray-400 text-sm mb-2">Jun 2015 - Jul 2015</p>
+                        <p class="text-gray-400 text-sm mb-4">A responsive and multilingual SEO-friendly website for one of the best educational institutions in the UAE, built on CodeIgniter.</p>
+                        <a href="#" class="text-purple-400 hover:underline">Show Project</a>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Education Section -->
+            <section id="education" class="tab-section hidden bg-gray-800 rounded-xl p-8 shadow-2xl glowing-border mb-12">
+                <h2 class="text-2xl font-bold text-purple-300 mb-6 glitch-text" data-text="Education">Education</h2>
+                <div class="space-y-6">
+                    <div>
+                        <h3 class="text-xl font-semibold text-blue-300">Bachelor of Marketing</h3>
+                        <p class="text-gray-400 font-medium">Virtual University, KARACHI, PAKISTAN · 2018-Current</p>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-semibold text-blue-300">H.S.C Pre-engineering</h3>
+                        <p class="text-gray-400 font-medium">Intermediate Board of Karachi, KARACHI, PAKISTAN · 2010-2012</p>
+                        <p class="text-gray-300 mt-2">Completed the 12th grade with a focus on pre-engineering.</p>
+                    </div>
+                </div>
+                <hr class="border-gray-700 my-8">
+                <h2 class="text-2xl font-bold text-purple-300 mb-6 glitch-text" data-text="Licenses & Certifications">Licenses & Certifications</h2>
+                <div class="space-y-6">
+                    <!-- One Million Prompters -->
+                    <div>
+                        <h3 class="text-xl font-semibold text-blue-300">One Million Prompters Certification - AI Prompt Engineering</h3>
+                        <p class="text-gray-400 font-medium">DUBAI FUTURE FOUNDATION · Issued Feb 2025</p>
+                        <p class="text-gray-300 mt-2">Skills: Prompt Engineering · Prompt Design · Prompt Optimization</p>
+                        <a href="#" class="text-purple-400 hover:underline">Show credential</a>
+                    </div>
+                    <!-- Google IT Automation -->
+                    <div>
+                        <h3 class="text-xl font-semibold text-blue-300">Google IT Automation with Python Specialization</h3>
+                        <p class="text-gray-400 font-medium">Coursera · Issued Oct 2023</p>
+                        <a href="#" class="text-purple-400 hover:underline">Show credential</a>
+                    </div>
+                    <!-- Configuration Management -->
+                    <div>
+                        <h3 class="text-xl font-semibold text-blue-300">Configuration Management and the Cloud</h3>
+                        <p class="text-gray-400 font-medium">Coursera · Issued Sep 2023</p>
+                        <a href="#" class="text-purple-400 hover:underline">Show credential</a>
+                    </div>
+                    <!-- Introduction to Git and GitHub -->
+                    <div>
+                        <h3 class="text-xl font-semibold text-blue-300">Introduction to Git and GitHub</h3>
+                        <p class="text-gray-400 font-medium">Coursera · Issued Sep 2023</p>
+                        <a href="#" class="text-purple-400 hover:underline">Show credential</a>
+                    </div>
+                    <!-- Troubleshooting and Debugging -->
+                    <div>
+                        <h3 class="text-xl font-semibold text-blue-300">Troubleshooting and Debugging Techniques</h3>
+                        <p class="text-gray-400 font-medium">Coursera · Issued Sep 2023</p>
+                        <a href="#" class="text-purple-400 hover:underline">Show credential</a>
+                    </div>
+                    <!-- Using Python to Interact with the Operating System -->
+                    <div>
+                        <h3 class="text-xl font-semibold text-blue-300">Using Python to Interact with the Operating System</h3>
+                        <p class="text-gray-400 font-medium">Coursera · Issued Sep 2023</p>
+                        <a href="#" class="text-purple-400 hover:underline">Show credential</a>
+                    </div>
+                    <!-- Crash Course on Python -->
+                    <div>
+                        <h3 class="text-xl font-semibold text-blue-300">Crash Course on Python</h3>
+                        <p class="text-gray-400 font-medium">Coursera · Issued Aug 2023</p>
+                        <a href="#" class="text-purple-400 hover:underline">Show credential</a>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Portfolio Section (New) -->
+            <section id="portfolio" class="tab-section hidden bg-gray-800 rounded-xl p-8 shadow-2xl glowing-border mb-12">
+                <h2 class="text-2xl font-bold text-purple-300 mb-6 glitch-text" data-text="Portfolio">Portfolio</h2>
+                <div class="flex flex-col items-center justify-center p-4">
+                    <!-- Updated Pinterest Embed Code -->
+                    <!-- This code uses Pinterest's official embed snippet to display the board -->
+                    <a data-pin-do="embedBoard" 
+                       data-pin-board-width="800"
+                       data-pin-scale-height="600"
+                       data-pin-scale-width="100"
+                       href="https://www.pinterest.com/wajidabid/my-portfolio/">
+                    </a>
                 </div>
             </section>
 
@@ -216,171 +443,77 @@
                         <p class="text-gray-300">Feel free to connect with me through the following channels:</p>
                         <div class="flex items-center space-x-4">
                             <img src="https://placehold.co/32x32/38BDF8/FFFFFF?text=E" alt="Email Icon" class="w-8 h-8 rounded-full">
-                            <a href="mailto:wajid.abid.khan@gmail.com" class="text-blue-300 hover:underline">wajid.abid.khan@gmail.com</a>
+                            <a href="mailto:vajidabid@gmail.com" class="text-blue-300 hover:underline">vajidabid@gmail.com</a>
+                        </div>
+ <div class="flex items-center space-x-4">
+                            <img src="https://placehold.co/32x32/38BDF8/FFFFFF?text=WS" alt="Email Icon" class="w-8 h-8 rounded-full">
+                            <a href="https://wa.me/971528201422?text=I%27m%20interested%20in%20your%20tech%20solutions
+
+" class="text-blue-300 hover:underline">+971 528201422</a>
                         </div>
                         <div class="flex items-center space-x-4">
                             <img src="https://placehold.co/32x32/8B5CF6/FFFFFF?text=L" alt="LinkedIn Icon" class="w-8 h-8 rounded-full">
-                            <a href="#" target="_blank" class="text-purple-300 hover:underline">linkedin.com/in/wajid-abid-khan</a>
+                            <a href="https://www.linkedin.com/in/wajid-abid-khan/" class="text-purple-300 hover:underline" target="_blank">LinkedIn Profile</a>
+                        </div>
+                        <div class="flex items-center space-x-4">
+                            <img src="https://placehold.co/32x32/1E90FF/FFFFFF?text=SO" alt="Stack Overflow Icon" class="w-8 h-8 rounded-full">
+                            <a href="https://stackoverflow.com/users/838126/wajid-abid-khan" class="text-blue-500 hover:underline" target="_blank">Stack Overflow Profile</a>
                         </div>
                     </div>
-                    <div class="flex-1">
-                        <form class="space-y-4">
-                            <div>
-                                <label for="name" class="block text-gray-400">Name</label>
-                                <input type="text" id="name" name="name" class="w-full bg-gray-900 border border-gray-700 rounded-md p-2 text-gray-200">
-                            </div>
-                            <div>
-                                <label for="email" class="block text-gray-400">Email</label>
-                                <input type="email" id="email" name="email" class="w-full bg-gray-900 border border-gray-700 rounded-md p-2 text-gray-200">
-                            </div>
-                            <div>
-                                <label for="message" class="block text-gray-400">Message</label>
-                                <textarea id="message" name="message" rows="4" class="w-full bg-gray-900 border border-gray-700 rounded-md p-2 text-gray-200"></textarea>
-                            </div>
-                            <button type="submit" class="bg-blue-600 text-white px-6 py-2 rounded-md font-semibold hover:bg-blue-700 transition-colors duration-300">Send Message</button>
-                        </form>
-                    </div>
                 </div>
             </section>
 
-            <!-- Gemini AI Assistant Section -->
+            <!-- AI Assistant Section -->
             <section id="gemini" class="tab-section hidden bg-gray-800 rounded-xl p-8 shadow-2xl glowing-border mb-12">
-                <h2 class="text-2xl font-bold text-purple-300 mb-6 glitch-text" data-text="AI Assistant">AI Assistant</h2>
-                <div class="space-y-4">
-                    <p class="text-gray-300">Ask the AI a question related to tech, development, or anything you'd like to learn more about!</p>
-                    <textarea id="prompt-input" class="w-full h-32 p-4 rounded-lg bg-gray-900 text-gray-200 border border-gray-700 focus:outline-none focus:border-blue-500 transition-colors duration-200" placeholder="e.g., Explain the difference between PHP and Node.js"></textarea>
-                    <button id="generate-button" class="bg-blue-600 text-white px-6 py-2 rounded-md font-semibold hover:bg-blue-700 transition-colors duration-300">Ask</button>
-                    <div id="loading-indicator" class="hidden text-gray-400 italic mt-2">Thinking...</div>
-                    <div id="gemini-output" class="p-4 rounded-lg bg-gray-900 border border-gray-700 text-gray-200 mt-4 min-h-[100px] whitespace-pre-wrap">The answer will appear here.</div>
-                </div>
+                <h2 class="text-2xl font-bold text-purple-300 mb-4 glitch-text" data-text="AI Assistant">AI Assistant</h2>
+                <p class="text-gray-300 leading-relaxed">
+                    This is a placeholder for a future AI assistant integration.
+                </p>
             </section>
-
         </div>
     </div>
-
-    <!-- JavaScript for Tab Functionality and Gemini API -->
+    
+    <!-- JavaScript for Tab Functionality -->
     <script>
+        // Wait for the DOM content to be fully loaded before running the script
         document.addEventListener('DOMContentLoaded', () => {
+            // Get all the tab navigation buttons and content sections
             const tabButtons = document.querySelectorAll('.tab-button');
             const tabSections = document.querySelectorAll('.tab-section');
 
-            // Set the 'About' tab as active by default
+            // Add a click event listener to each tab button
+            tabButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    // Get the 'data-tab' attribute to identify which section to show
+                    const tabId = button.dataset.tab;
+
+                    // Hide all sections and remove 'active' class from all buttons
+                    tabSections.forEach(section => {
+                        section.classList.add('hidden');
+                    });
+                    tabButtons.forEach(btn => {
+                        btn.classList.remove('active');
+                    });
+
+                    // Show the selected section and add the 'active' class to the clicked button
+                    const selectedSection = document.getElementById(tabId);
+                    if (selectedSection) {
+                        selectedSection.classList.remove('hidden');
+                        button.classList.add('active');
+                    }
+                });
+            });
+
+            // Set the 'About' section as the default visible tab on page load
             const aboutButton = document.querySelector('[data-tab="about"]');
             const aboutSection = document.getElementById('about');
             if (aboutButton && aboutSection) {
                 aboutButton.classList.add('active');
                 aboutSection.classList.remove('hidden');
             }
-
-            tabButtons.forEach(button => {
-                button.addEventListener('click', () => {
-                    const tab = button.dataset.tab;
-
-                    // Remove 'active' class from all buttons and 'hidden' from all sections
-                    tabButtons.forEach(btn => btn.classList.remove('active'));
-                    tabSections.forEach(sec => sec.classList.add('hidden'));
-
-                    // Add 'active' class to the clicked button and show the corresponding section
-                    button.classList.add('active');
-                    document.getElementById(tab).classList.remove('hidden');
-                });
-            });
-
-            // Gemini API Integration
-            const promptInput = document.getElementById('prompt-input');
-            const generateButton = document.getElementById('generate-button');
-            const geminiOutput = document.getElementById('gemini-output');
-            const loadingIndicator = document.getElementById('loading-indicator');
-
-            // Function to handle the API call with exponential backoff
-            async function fetchWithExponentialBackoff(url, options, maxRetries = 5, retryDelay = 1000) {
-                for (let i = 0; i < maxRetries; i++) {
-                    try {
-                        const response = await fetch(url, options);
-                        if (response.status === 429) { // Too Many Requests
-                            const delay = retryDelay * Math.pow(2, i);
-                            console.warn(`Rate limit exceeded. Retrying in ${delay}ms...`);
-                            await new Promise(res => setTimeout(res, delay));
-                            continue;
-                        }
-                        return response;
-                    } catch (error) {
-                        if (i < maxRetries - 1) {
-                            const delay = retryDelay * Math.pow(2, i);
-                            console.error(`Fetch failed. Retrying in ${delay}ms...`);
-                            await new Promise(res => setTimeout(res, delay));
-                        } else {
-                            throw error;
-                        }
-                    }
-                }
-                throw new Error('Max retries exceeded');
-            }
-
-            generateButton.addEventListener('click', async () => {
-                const prompt = promptInput.value.trim();
-                if (!prompt) {
-                    geminiOutput.textContent = "Please enter a question to get a response.";
-                    return;
-                }
-
-                geminiOutput.textContent = '';
-                loadingIndicator.classList.remove('hidden');
-
-                const systemPrompt = `You are a helpful and knowledgeable AI assistant. You will answer the user's questions in a clear, concise, and professional manner, formatted with markdown.`;
-                const userQuery = prompt;
-                const apiKey = ""; // API key is provided at runtime by the Canvas environment
-                const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-05-20:generateContent?key=${apiKey}`;
-
-                const payload = {
-                    contents: [{ parts: [{ text: userQuery }] }],
-                    tools: [{ "google_search": {} }],
-                    systemInstruction: {
-                        parts: [{ text: systemPrompt }]
-                    },
-                };
-
-                try {
-                    const response = await fetchWithExponentialBackoff(apiUrl, {
-                        method: 'POST',
-                        headers: { 'Content-Type': 'application/json' },
-                        body: JSON.stringify(payload)
-                    });
-                    const result = await response.json();
-                    
-                    const candidate = result.candidates?.[0];
-                    if (candidate && candidate.content?.parts?.[0]?.text) {
-                        let text = candidate.content.parts[0].text;
-                        const groundingMetadata = candidate.groundingMetadata;
-                        let sources = [];
-                        if (groundingMetadata && groundingMetadata.groundingAttributions) {
-                            sources = groundingMetadata.groundingAttributions
-                                .map(attribution => ({
-                                    uri: attribution.web?.uri,
-                                    title: attribution.web?.title,
-                                }))
-                                .filter(source => source.uri && source.title);
-                        }
-                        
-                        // Add citations to the text
-                        if (sources.length > 0) {
-                            text += "\n\n**Sources:**\n";
-                            sources.forEach((source, index) => {
-                                text += `${index + 1}. [${source.title}](${source.uri})\n`;
-                            });
-                        }
-                        geminiOutput.textContent = text;
-                    } else {
-                        geminiOutput.textContent = "Sorry, I couldn't generate a response. Please try again.";
-                    }
-                } catch (error) {
-                    console.error("Error calling Gemini API:", error);
-                    geminiOutput.textContent = "An error occurred. Please check the console for details.";
-                } finally {
-                    loadingIndicator.classList.add('hidden');
-                }
-            });
         });
     </script>
+    <!-- Pinterest embed script - must be at the end of the body -->
+    <script async defer src="//assets.pinterest.com/js/pinit.js"></script>
 </body>
 </html>
